@@ -1,3 +1,17 @@
+require vs module concept
+
+
+react is component driven
+module concept
+jsx = js + extended html - templating
+virtual dom
+
+Module = React Component / Variable / Function
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
