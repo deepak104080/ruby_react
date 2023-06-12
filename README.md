@@ -1,3 +1,11 @@
+node modules folder - actual dependencies download
+package json
+--list of dependencies - short list - name and version
+--scripts
+--some configuration
+package lock json - detailed list of dependencies
+
+
 require vs module concept
 
 

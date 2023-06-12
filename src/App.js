@@ -1,14 +1,14 @@
 import './App.css';
 
-const a = 5;
+// const a = 5;
 
-function App2() {
-  let a = 6;
+// function App2() {
+//   let a = 6;
 
-  return (
-    <div className="App"></div>
-  )
-}
+//   return (
+//     <div className="App"></div>
+//   )
+// }
 
 function App() {
   let a = 6;
@@ -20,7 +20,7 @@ function App() {
         {/* variables
         if else
         loops
-        function - xxxxxxxx */}
+        xxxxxx - function - xxxxxxxx */}
 
         <p>
           Edit <code>src/App.js</code> and save to reload.
