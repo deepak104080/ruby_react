@@ -54,3 +54,11 @@ code {
     transform: rotate(360deg);
   }
 }
+
+
+.table > div {
+  background-color: red;
+}
+.table > span {
+  background-color: greenyellow;
+}

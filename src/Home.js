@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 
 
 function Home() {
@@ -21,8 +21,20 @@ function Home() {
                             <li>{item}</li>
                         ))
                     }
-                </ul>    
+                     </ul>    
             </div>
+            <div>-----------------------</div>
+            <div class="table">
+                    {
+                        cars.map((item, index) => (
+                            <Fragment>
+                                <div>{index+1}</div>
+                                <span>{item}</span>
+                            </Fragment>
+                        ))
+                    }
+                    </div>
+               
         </div>
     ) 
 
