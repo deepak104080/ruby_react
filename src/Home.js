@@ -44,13 +44,13 @@ export default Home;
 
 
 
-// function abc() {
-//     let a = 5;
-//     let b = 6;
-//     return a
-// }
+function abc() {
+    let a = 5;
+    let b = 6;
+    return a
+}
 
-// abc()
+abc()
 
 
 // JSX Loop

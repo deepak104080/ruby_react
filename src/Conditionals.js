@@ -4,6 +4,7 @@ const Conditionals = () => {
     let status = true;
     let status2 = false;
     let status3 = true;
+
     // if(true) {
 
     // }
