@@ -62,3 +62,18 @@ code {
 .table > span {
   background-color: greenyellow;
 }
+
+
+
+.heading {
+  background-color: #61dafb;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.redText {
+  color: red;
+}
+
+.blueText {
+  color: blue;
+}

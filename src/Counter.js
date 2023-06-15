@@ -8,7 +8,7 @@ const Counter = () => {
     //Desturctuing - useState returns an array
     //1st Element - count - State varibale
     //2nd Element - setCount - Function to update State varibale
-    //Argument passed in useState decides 2 things - data type of state varibale and the initial value.
+    //Argument passed in useState decides 2 things - data type of state varibale and the initial value(compulsory).
     //On completion of setCount - automatically component re-renders.
     //setCount works in async mode.
 
