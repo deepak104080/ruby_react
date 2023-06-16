@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const TextColorToggle = () => {
 
-    const [color, setColor] = useState('red'); //true-red, false-blue
+    const [color, setColor] = useState(true); //true-red, false-blue
 
     function redFn() {
         setColor(true);

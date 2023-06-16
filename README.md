@@ -1,3 +1,45 @@
+npm approach
+types of components
+class component
+portal approach - install new supporting libraries
+
+
+
+
+
+Angular
+Vue
+
+npm - Node Package Manager
+yarn
+bower
+
+
+React - npx create-react-app <appname>
+
+
+boilerplate react - blank ready project
+-- all essential node modules - package.json
+-- src folder - basic files
+-- basic configurations
+
+
+
+npm - helps in starting blank repo
+
+
+Types of Components
+1 - Class Component
+2 - Functional Component
+
+
+
+
+
+
+
+
+
 node modules folder - actual dependencies download
 package json
 --list of dependencies - short list - name and version

@@ -9,6 +9,8 @@ import ToDo from './ToDo';
 import ToDo1 from './ToDo1';
 import './App.css'
 import TextColorToggle from './TextColorToggle';
+import TextColorChange from './TextColorChange';
+import ClassComp from './ClassComp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<TextColorToggle />);
+root.render(<ClassComp />);
