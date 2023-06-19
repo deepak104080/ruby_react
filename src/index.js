@@ -13,4 +13,4 @@ import TextColorChange from './TextColorChange';
 import ClassComp from './ClassComp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<ClassComp />);
+root.render(<App/>);
