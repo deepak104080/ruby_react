@@ -45,6 +45,12 @@ const Menubar = () => {
                                     <li className="nav-item">
                                         <Link to="/colorchange" className="nav-link" >ColorChange</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to="/formbasic" className="nav-link" >Form 1</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/lifecycle" className="nav-link" >Lifecycle</Link>
+                                    </li>
 
                                     {/* <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -12,6 +12,8 @@ import ToDo1 from './state/ToDo1';
 import Conditionals from './state/Conditionals';
 import TextColorToggle from './state/TextColorToggle';
 import TextColorChange from './state/TextColorChange';
+import Form_Basic from "./form/Form_Basic";
+import Lifecycle from "./class/Lifecycle";
 
 import Header from "./template/Header";
 import Menubar from "./template/Menubar";
@@ -47,6 +49,8 @@ function App() {
                   <Route path="/conditionals" element={<Conditionals/>}/>
                   <Route path="/colortoggle" element={<TextColorToggle/>}/>
                   <Route path="/colorchange" element={<TextColorChange/>}/>
+                  <Route path="/formbasic" element={<Form_Basic/>}/>
+                  <Route path="/lifecycle" element={<Lifecycle/>}/>
 
                   <Route path="/" element={<Home/>}/>
               </Routes>
