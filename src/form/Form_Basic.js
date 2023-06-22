@@ -6,7 +6,8 @@ const Form_Basic = () => {
     const [tempName, setTempName] = useState('');
     const [tempCity, setTempCity] = useState('');
 
-    function submitFn() {
+    function submitFn(e) {
+        // e.preventDefault();
         console.log('Name - ', tempName);
         console.log('City - ', tempCity);
         
@@ -20,6 +21,7 @@ const Form_Basic = () => {
     return(
         <>
         <h2>Registration Form</h2>
+        {/* <form> */}
         <br></br>
         Name: <input type="text" className="form-control" onChange={(e) => setTempName(e.target.value)} value={tempName}/>
         <br></br>
@@ -28,6 +30,7 @@ const Form_Basic = () => {
 
         <button className="btn btn-primary" onClick={submitFn}>Submit</button>
         <br></br>
+        {/* </form> */}
 
         <div>-----------------------------</div>
         <br></br>

@@ -51,6 +51,9 @@ const Menubar = () => {
                                     <li className="nav-item">
                                         <Link to="/lifecycle" className="nav-link" >Lifecycle</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to="/useeffect" className="nav-link" >UseEffect</Link>
+                                    </li>
 
                                     {/* <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
