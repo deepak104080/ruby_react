@@ -15,6 +15,7 @@ import TextColorChange from './state/TextColorChange';
 import Form_Basic from "./form/Form_Basic";
 import Lifecycle from "./class/Lifecycle";
 import UseEffect from "./hook/UseEffect";
+import Register from "./form/Register";
 
 import Header from "./template/Header";
 import Menubar from "./template/Menubar";
@@ -53,6 +54,7 @@ function App() {
                   <Route path="/formbasic" element={<Form_Basic/>}/>
                   <Route path="/lifecycle" element={<Lifecycle/>}/>
                   <Route path="/useeffect" element={<UseEffect/>}/>
+                  <Route path="/register" element={<Register/>}/>
 
                   <Route path="/" element={<Home/>}/>
               </Routes>
