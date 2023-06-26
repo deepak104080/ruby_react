@@ -16,6 +16,7 @@ import Form_Basic from "./form/Form_Basic";
 import Lifecycle from "./class/Lifecycle";
 import UseEffect from "./hook/UseEffect";
 import Register from "./form/Register";
+import EMI from "./lift_state/EMI";
 
 import Header from "./template/Header";
 import Menubar from "./template/Menubar";
@@ -55,6 +56,7 @@ function App() {
                   <Route path="/lifecycle" element={<Lifecycle/>}/>
                   <Route path="/useeffect" element={<UseEffect/>}/>
                   <Route path="/register" element={<Register/>}/>
+                  <Route path="/emi" element={<EMI/>}/>
 
                   <Route path="/" element={<Home/>}/>
               </Routes>

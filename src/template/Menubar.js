@@ -57,6 +57,9 @@ const Menubar = () => {
                                     <li className="nav-item">
                                         <Link to="/register" className="nav-link" >Register</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to="/emi" className="nav-link" >EMI</Link>
+                                    </li>
 
                                     {/* <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

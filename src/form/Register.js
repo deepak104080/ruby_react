@@ -58,11 +58,17 @@ const Register = () => {
             tempErrorObj.mobile = 'Length of mobile number is incoorect'
         }
 
+        let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
         //format of email is coorect - hw
-
+        if(!regex.test(formdata.email)) {
+            tempErrorObj.email = 'Email format in invalid'
+        }
 
         //format of mobile number is correct - hw
-
+        let regexmobile = new RegExp('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$');
+        if(!regexmobile.test(formdata.mobile)) {
+            tempErrorObj.mobile = 'Mobile format in invalid'
+        }
 
 
         //console.log(tempErrorObj);
