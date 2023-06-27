@@ -60,6 +60,12 @@ const Menubar = () => {
                                     <li className="nav-item">
                                         <Link to="/emi" className="nav-link" >EMI</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to="/propsdrilling" className="nav-link" >Props_Drilling</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/propsdrillingcontext" className="nav-link" >Props_Drilling_Context</Link>
+                                    </li>
 
                                     {/* <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

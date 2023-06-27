@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -17,6 +17,8 @@ import Lifecycle from "./class/Lifecycle";
 import UseEffect from "./hook/UseEffect";
 import Register from "./form/Register";
 import EMI from "./lift_state/EMI";
+import Props_Parent from './props_drilling/Props_Parent';
+import Props_Parent_Context from "./props_drilling_context/Props_Parent_Context";
 
 import Header from "./template/Header";
 import Menubar from "./template/Menubar";
@@ -27,45 +29,60 @@ import Footer from "./template/Footer";
 // import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+//Global Context Variable created
+export const GlobalContext = React.createContext();
+
 function App() {
+
+  let temp = {
+    globalname: 'Global Name',
+    globalcity: 'Global City'
+  }
+
+  const [globalState, setGlobalState] = useState(temp);
+
   return (
     <div>
       <BrowserRouter>
-      <div className="container">
-        <Header/>
-        <Menubar/>
-        <div className="row bg-danger-subtle">
-          <LeftSideBar/>
+        <GlobalContext.Provider value={{globalState, setGlobalState}}>
+          <div className="container">
+            <Header />
+            <Menubar />
+            <div className="row bg-danger-subtle">
+              <LeftSideBar />
 
-          <div className="col-6 bg-warning-subtle">
-            
-              <Routes>
-                  <Route path="/home" element={<Home/>}/>
-                  <Route path="/about" element={<About/>}/>
-                  <Route path="/services" element={<Services/>}/>
-                  <Route path="/contact" element={<Contact/>}/>
-                  <Route path="/counter" element={<Counter/>}/>
+              <div className="col-6 bg-warning-subtle">
 
-                  <Route path="/class" element={<ClassComp/>}/>
-                  <Route path="/todo" element={<ToDo/>}/>
-                  <Route path="/todo1" element={<ToDo1/>}/>
-                  <Route path="/conditionals" element={<Conditionals/>}/>
-                  <Route path="/colortoggle" element={<TextColorToggle/>}/>
-                  <Route path="/colorchange" element={<TextColorChange/>}/>
-                  <Route path="/formbasic" element={<Form_Basic/>}/>
-                  <Route path="/lifecycle" element={<Lifecycle/>}/>
-                  <Route path="/useeffect" element={<UseEffect/>}/>
-                  <Route path="/register" element={<Register/>}/>
-                  <Route path="/emi" element={<EMI/>}/>
+                <Routes>
+                  <Route path="/home" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/counter" element={<Counter />} />
 
-                  <Route path="/" element={<Home/>}/>
-              </Routes>
+                  <Route path="/class" element={<ClassComp />} />
+                  <Route path="/todo" element={<ToDo />} />
+                  <Route path="/todo1" element={<ToDo1 />} />
+                  <Route path="/conditionals" element={<Conditionals />} />
+                  <Route path="/colortoggle" element={<TextColorToggle />} />
+                  <Route path="/colorchange" element={<TextColorChange />} />
+                  <Route path="/formbasic" element={<Form_Basic />} />
+                  <Route path="/lifecycle" element={<Lifecycle />} />
+                  <Route path="/useeffect" element={<UseEffect />} />
+                  <Route path="/register" element={<Register />} />
+                  <Route path="/emi" element={<EMI />} />
+                  <Route path="/propsdrilling" element={<Props_Parent />} />
+                  <Route path="/propsdrillingcontext" element={<Props_Parent_Context />} />
+
+                  <Route path="/" element={<Home />} />
+                </Routes>
+              </div>
+
+              <RightSideBar />
+            </div>
+            <Footer />
           </div>
-
-          <RightSideBar/>
-        </div>
-        <Footer/>
-      </div>
+        </GlobalContext.Provider>
       </BrowserRouter>
     </div>
   );
