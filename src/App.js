@@ -19,6 +19,9 @@ import Register from "./form/Register";
 import EMI from "./lift_state/EMI";
 import Props_Parent from './props_drilling/Props_Parent';
 import Props_Parent_Context from "./props_drilling_context/Props_Parent_Context";
+import Api_Func from "./api/Api_Func";
+import Api_Func_Onload from "./api/Api_Func_OnLoad";
+import MovieApp from "./api/MovieApp";
 
 import Header from "./template/Header";
 import Menubar from "./template/Menubar";
@@ -49,9 +52,10 @@ function App() {
             <Header />
             <Menubar />
             <div className="row bg-danger-subtle">
-              <LeftSideBar />
+              {/* <LeftSideBar /> */}
 
-              <div className="col-6 bg-warning-subtle">
+              {/* <div className="col-6 bg-warning-subtle"> */}
+              <div className="col-12 bg-warning-subtle">
 
                 <Routes>
                   <Route path="/home" element={<Home />} />
@@ -73,12 +77,15 @@ function App() {
                   <Route path="/emi" element={<EMI />} />
                   <Route path="/propsdrilling" element={<Props_Parent />} />
                   <Route path="/propsdrillingcontext" element={<Props_Parent_Context />} />
+                  {/* <Route path="/apifunc" element={<Api_Func_Onload />} /> */}
+                  <Route path="/apifunc" element={<Api_Func />} />
+                  <Route path="/movieapp" element={<MovieApp />} />
 
                   <Route path="/" element={<Home />} />
                 </Routes>
               </div>
 
-              <RightSideBar />
+              {/* <RightSideBar /> */}
             </div>
             <Footer />
           </div>
