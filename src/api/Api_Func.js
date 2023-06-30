@@ -69,3 +69,8 @@ const Api_Func = () => {
 }
 
 export default Api_Func
+
+
+//HW
+// Implement the same in class component
+// Improve loader experience - modal type look

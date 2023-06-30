@@ -1,5 +1,6 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import {Container, Nav, Navbar, NavDropdown}  from 'react-bootstrap';
 
 const Menubar = () => {
     return (
@@ -54,7 +55,7 @@ const Menubar = () => {
                                     <li className="nav-item">
                                         <Link to="/useeffect" className="nav-link" >UseEffect</Link>
                                     </li>
-                                    
+
 
                                     {/* <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,7 +83,7 @@ const Menubar = () => {
                         <div className="container-fluid">
                             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul className="navbar-nav">
-                                    
+
                                     <li className="nav-item">
                                         <Link to="/register" className="nav-link" >Register</Link>
                                     </li>
@@ -101,12 +102,46 @@ const Menubar = () => {
                                     <li className="nav-item">
                                         <Link to="/movieapp" className="nav-link" >Movie App</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to="/formapi" className="nav-link" >Form Api</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/movieappimage" className="nav-link" >Movie App Image</Link>
+                                    </li>
 
                                 </ul>
                             </div>
                         </div>
                     </nav>
 
+                </div>
+            </div>
+
+            <div className="row bg-info-subtle">
+                <div className="col-12">
+                    <Navbar expand="lg" className="bg-body-tertiary">
+                        <Container>
+                            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="me-auto">
+                                    <Nav.Link href="#home">Home</Nav.Link>
+                                    <Nav.Link href="#link">Link</Nav.Link>
+                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.2">
+                                            Another action
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                        <NavDropdown.Divider />
+                                        <NavDropdown.Item href="#action/3.4">
+                                            Separated link
+                                        </NavDropdown.Item>
+                                    </NavDropdown>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                    </Navbar>
                 </div>
             </div>
         </>

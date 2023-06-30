@@ -22,12 +22,16 @@ import Props_Parent_Context from "./props_drilling_context/Props_Parent_Context"
 import Api_Func from "./api/Api_Func";
 import Api_Func_Onload from "./api/Api_Func_OnLoad";
 import MovieApp from "./api/MovieApp";
+import FormApi from "./api/FormApi";
+import MovieAppImage from "./api/MovieAppImage";
+import MovieAppImageDetails from "./api/MovieAppImageDetails";
 
 import Header from "./template/Header";
 import Menubar from "./template/Menubar";
 import LeftSideBar from "./template/LeftSideBar";
 import RightSideBar from "./template/RightSideBar";
 import Footer from "./template/Footer";
+import NotFound from "./pages/NotFound";
 
 // import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -47,7 +51,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <GlobalContext.Provider value={{globalState, setGlobalState}}>
+        <GlobalContext.Provider value={{ globalState, setGlobalState }}>
           <div className="container">
             <Header />
             <Menubar />
@@ -80,8 +84,17 @@ function App() {
                   {/* <Route path="/apifunc" element={<Api_Func_Onload />} /> */}
                   <Route path="/apifunc" element={<Api_Func />} />
                   <Route path="/movieapp" element={<MovieApp />} />
+                  <Route path="/formapi" element={<FormApi />} />
+                  <Route path="/movieappimage" element={<MovieAppImage />} />
+                  <Route path="/movieappimagedetails/:tempid" element={<MovieAppImageDetails />} />
+
+                  <Route path="/pages">
+                    <Route path="about" element={<About />} />
+                    <Route path="services" element={<Services />} />
+                  </Route>
 
                   <Route path="/" element={<Home />} />
+                  <Route path="/*" element={<NotFound />} />
                 </Routes>
               </div>
 

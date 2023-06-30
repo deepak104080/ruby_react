@@ -11,7 +11,7 @@ const MovieApp = () => {
         console.log(data);
         setapidata(data.results);
         let num = Array(data.total_pages).fill(0);
-        setNumPages(num);      
+        setNumPages(num);
     }
 
     const callApiUpdate = (num) => {
